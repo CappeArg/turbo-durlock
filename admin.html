@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="auth-container">
+        <h2>Admin</h2>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button id="login">Login</button>
+        <button id="signup">Sign Up</button>
+        <button id="logout" style="display: none;">Logout</button>
+    </div>
+    <div id="admin-panel" style="display: none;">
+        <h2>Edit Profile</h2>
+        <input type="text" id="username-input" placeholder="Username">
+        <input type="file" id="profile-picture-input">
+        <input type="text" id="whatsapp-input" placeholder="WhatsApp URL">
+        <input type="text" id="instagram-input" placeholder="Instagram URL">
+        <input type="text" id="tiktok-input" placeholder="TikTok URL">
+        <button id="save-profile">Save</button>
+    </div>
+    <!-- Firebase SDK -->
+    <script src="/__/firebase/9.6.1/firebase-app-compat.js"></script>
+    <script src="/__/firebase/9.6.1/firebase-auth-compat.js"></script>
+    <script src="/__/firebase/9.6.1/firebase-firestore-compat.js"></script>
+
+    <!-- Firebase configuration -->
+    <script src="/__/firebase/init.js"></script>
+
+    <script src="admin.js"></script>
+</body>
+</html>
